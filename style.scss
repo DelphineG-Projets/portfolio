@@ -22,6 +22,35 @@ section {
     width: 100vw;
 }
 
+#apropos {
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 50px;
+
+.apropos {
+    &__objectif {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    &__image {
+        grid-area: 2 / 1 / 3 / 2;
+        img {
+            object-fit: cover;
+            object-position: 0 0%;
+            width: 100%;
+            height: 500px;
+        }
+
+
+    }
+
+    &__text {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+}
+
+}
+
 .projets {
     height: 100%;
     display: grid;
