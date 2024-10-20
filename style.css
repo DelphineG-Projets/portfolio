@@ -1,0 +1,128 @@
+:root {
+  --primary: #0D0D0D;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(40, 40, 40);
+  font-size: 30px;
+  color: white;
+}
+
+nav, .container-fluid {
+  color: white !important;
+}
+
+section {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#hero {
+  height: 100vh;
+  width: 100vw;
+}
+
+.projets {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.projets__text-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  border-top: 2px solid black;
+  border-right: 0;
+  border-left: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: bolder;
+  background-color: red;
+}
+.projets__text-item:nth-child(1):hover ~ .projets__image {
+  background-image: url("./assets/medias/projet-1-cover.jpg") !important;
+}
+.projets__text-item:nth-child(2):hover ~ .projets__image {
+  background-image: url("./assets/medias/projet-2-cover.jpg") !important;
+}
+.projets__image {
+  height: 50%;
+  grid-area: 1/2/5/3;
+  background-image: none;
+}
+
+.competences {
+  height: 100vh; /* This makes the container taller than the viewport */
+  text-align: center;
+  position: relative;
+}
+.competences__text {
+  font-size: 100px;
+}
+.competences__item {
+  position: absolute;
+  padding: 10px 60px;
+  background-color: rgb(176, 50, 50);
+  border-radius: 50px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 70%;
+}
+.competences__item:first-child {
+  top: 50px;
+  left: 50px;
+}
+.competences__item:nth-child(2) {
+  top: 100px;
+  left: 900px;
+}
+.competences__item:nth-child(3) {
+  top: 75px;
+  left: 700px;
+}
+.competences__item:nth-child(4) {
+  top: 15px;
+  left: 400px;
+}
+.competences__item:nth-child(5) {
+  top: 405px;
+  left: 150px;
+}
+.competences__item:nth-child(6) {
+  top: 25px;
+  left: 100px;
+}
+.competences__item:nth-child(7) {
+  top: 400px;
+  left: 550px;
+}
+.competences__item:nth-child(8) {
+  top: 350px;
+  left: 280px;
+}
+.competences__item:nth-child(9) {
+  top: 450px;
+  left: 880px;
+}
+
+#contacts {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
+
+footer {
+  background-color: var(--primary);
+}
+
+.nav-link {
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
