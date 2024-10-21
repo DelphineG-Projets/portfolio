@@ -2,13 +2,18 @@ gsap.registerPlugin(ScrollTrigger);
 let items = document.querySelectorAll(".competences__item");
 let text = document.querySelector(".competences");
 let button = document.querySelector(".btn");
+let icons = document.querySelectorAll(".icon-move");
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
-  spaceBetween: 50,
+  spaceBetween: 30,
   initialSlide: 1,
   loop: true,
   centeredSlides: true,
+  992: {
+    slidesPerView: 3,
+    spaceBetween: 50
+  },
   autoplay: {
     delay: 5500,
     disableOnInteraction: false,
@@ -55,20 +60,30 @@ gsap.fromTo(
   }
 );
 
-items.forEach((item, index) => {
-  gsap.to(item, {
-    y: -(index + 1) * 10,
-    x: (index % 2 === 0 ? -1 : 1) * 60,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".competences",
-      toggleActions: "restart complete reverse reset",
-      start: "top bottom",
-      end: "bottom top",
-      scrub: 1,
-    },
-  });
-});
+function animateItems() {
+  if (window.innerWidth >= 992) {
+    items.forEach((item, index) => {
+      gsap.to(item, {
+        y: -(index + 1) * 10,
+        x: (index % 2 === 0 ? -1 : 1) * 60,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".competences",
+          toggleActions: "restart complete reverse reset",
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1,
+        },
+      });
+    });
+  }
+}
+
+animateItems();
+
+window.addEventListener('resize', animateItems);
+
+
 
 button.addEventListener("mousemove", (e) => {
   const rect = button.getBoundingClientRect();
@@ -81,3 +96,18 @@ button.addEventListener("mousemove", (e) => {
 button.addEventListener("mouseleave", () => {
   button.style.transform = "translate(0, 0)";
 });
+
+icons.forEach(function (icon) {
+  icon.addEventListener("mousemove", (e) => {
+    const rect = icon.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+  
+    icon.style.transform = `translate(${x / 5}px, ${y / 5}px)`;
+  });
+  
+  icon.addEventListener("mouseleave", () => {
+    icon.style.transform = "translate(0, 0)";
+  });
+});
+
