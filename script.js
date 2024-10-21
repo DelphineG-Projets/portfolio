@@ -5,15 +5,18 @@ let button = document.querySelector(".btn");
 let icons = document.querySelectorAll(".icon-move");
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
   initialSlide: 1,
   loop: true,
   centeredSlides: true,
-  992: {
-    slidesPerView: 3,
-    spaceBetween: 50
-  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }},
   autoplay: {
     delay: 5500,
     disableOnInteraction: false,
@@ -64,7 +67,6 @@ function animateItems() {
   if (window.innerWidth >= 992) {
     items.forEach((item, index) => {
       gsap.to(item, {
-        y: -(index + 1) * 10,
         x: (index % 2 === 0 ? -1 : 1) * 60,
         ease: "none",
         scrollTrigger: {
