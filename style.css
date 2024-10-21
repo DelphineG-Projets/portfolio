@@ -380,9 +380,7 @@ footer svg {
     margin-bottom: 5%;
     font-size: 3em;
   }
-  .competences {
-    overflow-x: hidden;
-  }
+
   .competences__text {
     font-size: 10vw;
     position: absolute;
