@@ -7,7 +7,10 @@ $compmid: #b0b4a1;
 $compbg: #6c7255;
 $comppale: #e1e0d3;
 
-
+main {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
 * {
   font-family: "Sen", sans-serif;
   color: $compfonce;
@@ -91,6 +94,7 @@ nav {
 #apropos {
   height: 100vh;
   background-color: $comppale;
+  margin-bottom: 10%;
 }
 
 .apropos {
@@ -109,7 +113,6 @@ nav {
       p {
         text-align: center;
         color: $compbg;
-        font-size: 32px;
       }
     }
 
@@ -354,7 +357,7 @@ nav {
   
  
   &__info {
-
+    text-align: center;
     a {
       color: $compfonce;
     
@@ -442,7 +445,19 @@ footer {
 }
 
 @media (max-width: 992px){
+  .contacts {
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1em;
+    &__text {
+      margin-bottom: 5%;
+      font-size: 3em;
+    }
+  }
   .competences {
+    overflow-x: hidden;
 
     &__text {
       font-size: 10vw;
@@ -480,7 +495,16 @@ footer {
 } ;
 
 /* MEDIA QUERIES */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+
+  .apropos {
+    gap: 0;
+  }
+
+  p.h3 {
+margin-top: 0;
+    font-size: 1.25em;
+  }
 
  
   h1,
@@ -520,7 +544,7 @@ p, h1, h2, h3, h4, ul{
   padding: 0 5%;
 }
   main {
-    margin: 0 auto;
+    margin: 0 2%;
 
   }
 
@@ -589,6 +613,7 @@ p, h1, h2, h3, h4, ul{
 
 
   .contacts {
+
     text-align: center;
     justify-content: center;
     display: grid;
@@ -596,10 +621,147 @@ p, h1, h2, h3, h4, ul{
     font-size: 1em;
     &__text {
       margin-bottom: 5%;
-      font-size: 5em;
+      font-size: 3.5em;
     }
   }
 
  
 
 }
+
+@media (max-width: 450px) {
+
+  p.h3 {
+    margin: 10% 0;
+    font-size: 1em;
+  }
+  .btn {
+    padding: 0.5em 1em;
+  }
+
+
+ 
+ 
+  h1,
+  .h1 {
+    font-size: 32px;
+  }
+  
+  h2,
+  .h2 {
+    font-size: 24px;
+  }
+  
+  h3,
+  .h3 {
+    font-size: 18px;
+  }
+
+ h4 {
+  font-size: 16px;
+ }
+  
+  p,
+  a,
+  span,
+  .btn {
+    font-size: 16px;
+  }
+
+
+  .apropos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+    &__contact {
+      font-size: 0.5em;
+    }
+
+  }
+p, h1, h2, h3, h4, ul{
+  padding: 0 5%;
+}
+  main {
+    margin: 0 2%;
+
+  }
+
+
+
+
+  .projet {
+    
+    .swiper {
+      height: 300px;
+    }
+    .swiper-slide img {
+      object-position: 50% 50%;
+      background-color: red;
+
+  }
+
+    &__image {
+      grid-template-columns: 1fr;
+      margin-bottom:0%;
+
+
+
+      iframe {
+        height: 400px;
+        margin-bottom:30%;
+      
+      }
+    }
+  }
+
+  .competences {
+
+    &__text {
+      font-size: 10vw;
+      position: absolute;
+      z-index: 50;
+
+    }
+  
+    &__item {
+     display: none;
+    }
+    
+
+    .comp-hidden {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      transform: translateY(60%);
+      gap: 10px;
+    }
+
+    &__item-hidden {
+      display: block;
+      font-size: 0.75em;
+      padding: 0.5em 2em;
+      background-color: $compmid;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+  }
+
+
+  .contacts {
+
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1em;
+    &__text {
+      margin-bottom: 5%;
+      font-size: 2.5em;
+    }
+  }
+
+
+}
+
