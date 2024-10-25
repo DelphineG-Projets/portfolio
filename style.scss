@@ -35,13 +35,99 @@ h4 {
   font-size: 40px;
 }
 
-
 p,
 a,
 span,
 .btn {
   font-size: 18px;
 }
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: $compbg;
+}
+
+#hero {
+  padding-top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  .cv {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    background-color: $compfonce;
+    border-radius: 50%;
+    right: -4%;
+    top:50%;
+    z-index: 100;
+  }
+
+  .hero {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    &__text {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: $compbg;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &-container {
+        margin-left: 5%;
+      }
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+
+    .btn-swiper {
+      position: absolute;
+      bottom: 5%;
+      right: 10%;
+
+    }
+  
+
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+        
+      }
+  
+
+    }
+  
+
+
+
 
 .btn {
   position: absolute;
@@ -75,12 +161,19 @@ section {
   padding: 5% 0;
 }
 
-
 nav {
-  background-color: $compmid;
-  position: sticky;
+  background-color: $compfonce;
+
   top: 0;
   overflow: hidden;
+
+  a {
+    color: $comppale !important;
+
+    &:hover {
+      color: $compfonce !important;
+    }
+  }
 }
 
 .logo {
@@ -89,7 +182,6 @@ nav {
   color: $comppale;
   font-weight: bold;
 }
-
 
 #apropos {
   height: 100vh;
@@ -103,7 +195,6 @@ nav {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 50px;
   grid-row-gap: 100px;
-
 
   .apropos {
     &__objectif {
@@ -132,7 +223,6 @@ nav {
       grid-area: 1 / 2 / 2 / 3;
     }
   }
-
 }
 
 #projets {
@@ -142,7 +232,6 @@ nav {
     width: 100%;
     height: 100%;
     border-radius: 25px;
-
   }
 
   .swiper-slide {
@@ -184,7 +273,7 @@ nav {
           margin: 0;
           text-transform: uppercase;
           font-weight: bold;
-          color: $comppale
+          color: $comppale;
         }
       }
     }
@@ -216,21 +305,17 @@ nav {
         margin: 0;
         text-transform: uppercase;
         font-weight: bold;
-        color: $comppale
+        color: $comppale;
       }
     }
   }
-
-
 }
-
 
 .swiper-slide .redirect {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 100;
-
 }
 
 .swiper-slide img {
@@ -239,10 +324,6 @@ nav {
   object-fit: cover;
   object-position: 25% 0;
 }
-
-
-
-
 
 #competences {
   height: 100vh;
@@ -308,7 +389,6 @@ nav {
     }
 
     &:nth-child(5) {
-
       top: 200px;
       left: -100px;
       z-index: 100;
@@ -339,8 +419,6 @@ nav {
   }
 }
 
-
-
 .contacts {
   overflow-y: hidden;
   width: 100%;
@@ -354,21 +432,17 @@ nav {
     font-weight: bold;
     text-transform: uppercase;
   }
-  
- 
+
   &__info {
     text-align: center;
     a {
       color: $compfonce;
-    
-
     }
 
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
 }
 
 footer {
@@ -388,7 +462,6 @@ footer {
 .nav-link {
   font-size: 20px;
 }
-
 
 /* PROJET */
 .projet {
@@ -414,37 +487,31 @@ footer {
     object-fit: cover;
   }
 
-
   &__image {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
     height: auto;
     margin: 5% 0;
-
-
   }
 }
 
 .margin-section {
   margin-bottom: 10%;
-
 }
 
 .grotte-bottom {
-
-
   &-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     img {
-      width: 100%
+      width: 100%;
     }
   }
 }
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
   .contacts {
     text-align: center;
     justify-content: center;
@@ -463,13 +530,11 @@ footer {
       font-size: 10vw;
       position: absolute;
       z-index: 50;
+    }
 
-    }
-  
     &__item {
-     display: none;
+      display: none;
     }
-    
 
     .comp-hidden {
       padding: 5% 5%;
@@ -489,43 +554,40 @@ footer {
       display: flex;
       align-items: center;
       justify-content: center;
-
     }
   }
-} ;
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 800px) {
-
   .apropos {
     gap: 0;
   }
 
   p.h3 {
-margin-top: 0;
+    margin-top: 0;
     font-size: 1.25em;
   }
 
- 
   h1,
   .h1 {
     font-size: 48px;
   }
-  
+
   h2,
   .h2 {
     font-size: 32px;
   }
-  
+
   h3,
   .h3 {
     font-size: 24px;
   }
 
- h4 {
-  font-size: 24px;
- }
-  
+  h4 {
+    font-size: 24px;
+  }
+
   p,
   a,
   span,
@@ -533,62 +595,52 @@ margin-top: 0;
     font-size: 16px;
   }
 
-
   .apropos {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-
-
   }
-p, h1, h2, h3, h4, ul{
-  padding: 0 5%;
-}
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  ul {
+    padding: 0 5%;
+  }
   main {
     margin: 0 2%;
-
   }
 
-
-
-
   .projet {
-    
     .swiper {
       height: 300px;
     }
     .swiper-slide img {
       object-position: 50% 50%;
       background-color: red;
-
-  }
+    }
 
     &__image {
       grid-template-columns: 1fr;
-      margin-bottom:0%;
-
-
+      margin-bottom: 0%;
 
       iframe {
         height: 400px;
-        margin-bottom:30%;
-      
+        margin-bottom: 30%;
       }
     }
   }
 
   .competences {
-
     &__text {
       font-size: 10vw;
       position: absolute;
       z-index: 50;
+    }
 
-    }
-  
     &__item {
-     display: none;
+      display: none;
     }
-    
 
     .comp-hidden {
       padding: 5% 5%;
@@ -607,13 +659,10 @@ p, h1, h2, h3, h4, ul{
       display: flex;
       align-items: center;
       justify-content: center;
-
     }
   }
 
-
   .contacts {
-
     text-align: center;
     justify-content: center;
     display: grid;
@@ -624,13 +673,9 @@ p, h1, h2, h3, h4, ul{
       font-size: 3.5em;
     }
   }
-
- 
-
 }
 
 @media (max-width: 450px) {
-
   p.h3 {
     margin: 10% 0;
     font-size: 1em;
@@ -639,35 +684,31 @@ p, h1, h2, h3, h4, ul{
     padding: 0.5em 1em;
   }
 
-
- 
- 
   h1,
   .h1 {
     font-size: 32px;
   }
-  
+
   h2,
   .h2 {
     font-size: 24px;
   }
-  
+
   h3,
   .h3 {
     font-size: 18px;
   }
 
- h4 {
-  font-size: 16px;
- }
-  
+  h4 {
+    font-size: 16px;
+  }
+
   p,
   a,
   span,
   .btn {
     font-size: 16px;
   }
-
 
   .apropos {
     grid-template-columns: 1fr;
@@ -676,57 +717,49 @@ p, h1, h2, h3, h4, ul{
     &__contact {
       font-size: 0.5em;
     }
-
   }
-p, h1, h2, h3, h4, ul{
-  padding: 0 5%;
-}
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  ul {
+    padding: 0 5%;
+  }
   main {
     margin: 0 2%;
-
   }
 
-
-
-
   .projet {
-    
     .swiper {
       height: 300px;
     }
     .swiper-slide img {
       object-position: 50% 50%;
       background-color: red;
-
-  }
+    }
 
     &__image {
       grid-template-columns: 1fr;
-      margin-bottom:0%;
-
-
+      margin-bottom: 0%;
 
       iframe {
         height: 400px;
-        margin-bottom:30%;
-      
+        margin-bottom: 30%;
       }
     }
   }
 
   .competences {
-
     &__text {
       font-size: 10vw;
       position: absolute;
       z-index: 50;
+    }
 
-    }
-  
     &__item {
-     display: none;
+      display: none;
     }
-    
 
     .comp-hidden {
       display: grid;
@@ -744,13 +777,10 @@ p, h1, h2, h3, h4, ul{
       display: flex;
       align-items: center;
       justify-content: center;
-
     }
   }
 
-
   .contacts {
-
     text-align: center;
     justify-content: center;
     display: grid;
@@ -761,7 +791,4 @@ p, h1, h2, h3, h4, ul{
       font-size: 2.5em;
     }
   }
-
-
 }
-

@@ -4,7 +4,7 @@ let text = document.querySelector(".competences");
 let button = document.querySelector(".btn");
 let icons = document.querySelectorAll(".icon-move");
 
-var swiper = new Swiper(".mySwiper", {
+var swiper4 = new Swiper(".mySwiper", {
   initialSlide: 1,
   loop: true,
   centeredSlides: true,
@@ -28,6 +28,21 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+let swiperHero = new Swiper(".swiperHero", {
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 var swiper = new Swiper(".myProjet", {
   spaceBetween: 30,
   centeredSlides: true,
@@ -38,7 +53,7 @@ var swiper = new Swiper(".myProjet", {
   },
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    type: "fraction",
   },
   navigation: {
     nextEl: ".swiper-button-next",
