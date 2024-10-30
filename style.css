@@ -3,8 +3,14 @@ main {
   overflow-x: hidden;
 }
 
+iframe {
+  margin: 5% 5%;
+}
+
+
+
 .projet, .projets, .apropos, .contact{
-  margin: 5% 0;
+  margin: 5% 5%;}
 
 * {
   font-family: "Sen", sans-serif;
@@ -332,7 +338,7 @@ nav a:hover {
   width: 700px;
   height: 500px;
 
-  margin-bottom: 5%;
+  margin-bottom: 15%;
 }
 #projet .swiper-slide {
   text-align: center;
