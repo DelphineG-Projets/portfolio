@@ -3,6 +3,9 @@ main {
   overflow-x: hidden;
 }
 
+.projet, .projets, .apropos, .contact{
+  margin: 5% 0;
+
 * {
   font-family: "Sen", sans-serif;
   color: #222222;
