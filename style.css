@@ -331,6 +331,8 @@ nav a:hover {
 #projet .myProjet {
   width: 700px;
   height: 500px;
+
+  margin-bottom: 5%;
 }
 #projet .swiper-slide {
   text-align: center;
