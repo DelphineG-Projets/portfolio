@@ -3,15 +3,6 @@ main {
   overflow-x: hidden;
 }
 
-iframe {
-  margin: 5% 5%;
-}
-
-
-
-.projet, .projets, .apropos, .contact{
-  margin: 5% 5%;}
-
 * {
   font-family: "Sen", sans-serif;
   color: #222222;
@@ -41,23 +32,6 @@ a,
 span, .p,
 .btn {
   font-size: 20px;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  background-color: #f5f5f5;
-}
-
-::-webkit-scrollbar {
-  width: 12px;
-  background-color: #f5f5f5;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #6c7255;
 }
 
 #hero {
@@ -183,6 +157,7 @@ nav a:hover {
 }
 
 #apropos, #projet {
+  margin: 0% 5%;
   height: 100vh;
   background-color: #e1e0d3;
   margin-bottom: 5%;
@@ -337,8 +312,6 @@ nav a:hover {
 #projet .myProjet {
   width: 700px;
   height: 500px;
-
-  margin-bottom: 15%;
 }
 #projet .swiper-slide {
   text-align: center;
@@ -612,6 +585,88 @@ footer svg {
 }
 
 @media (max-width: 992px) {
+  #apropos .apropos, #projet .apropos {
+    margin: 5% 0;
+  }
+  #apropos .apropos .valeur-item, #projet .apropos .valeur-item {
+    width: 1%;
+    height: 2;
+  }
+  #apropos .apropos h4, #projet .apropos h4 {
+    margin-bottom: 5%;
+  }
+  #apropos .apropos__bottom, #projet .apropos__bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    height: 60%;
+    margin-bottom: 10%;
+  }
+  #apropos .apropos__bottom-img, #projet .apropos__bottom-img {
+    position: relative;
+    height: 100px;
+  }
+  #apropos .apropos__bottom-img img, #projet .apropos__bottom-img img {
+    -o-object-position: 25% 0;
+       object-position: 25% 0;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 450px;
+    border-radius: 25px;
+    position: relative;
+  }
+  #apropos .apropos__bottom-img .cv, #projet .apropos__bottom-img .cv {
+    border: none;
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    left: 0%;
+    bottom: 0;
+    z-index: 100;
+    background-color: #6c7255;
+  }
+  #apropos .apropos__bottom-img #textPath, #projet .apropos__bottom-img #textPath {
+    font-size: 15px;
+    font-size: bolder;
+    fill: #e1e0d3;
+  }
+  #apropos .apropos__bottom-valeurs, #projet .apropos__bottom-valeurs {
+    height: 40%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #apropos .apropos__bottom-valeurs .btn, #projet .apropos__bottom-valeurs .btn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+  }
+  #apropos .apropos__bottom-valeurs .btn:nth-child(1), #projet .apropos__bottom-valeurs .btn:nth-child(1) {
+    grid-area: 1/1/2/2;
+  }
+  #apropos .apropos__bottom-valeurs .btn:nth-child(2), #projet .apropos__bottom-valeurs .btn:nth-child(2) {
+    grid-area: 2/1/3/2;
+  }
+  #apropos .apropos__bottom-valeurs .btn:nth-child(3), #projet .apropos__bottom-valeurs .btn:nth-child(3) {
+    grid-area: 3/1/4/2;
+  }
+  #apropos .apropos__bottom-valeurs .valeur-hidden, #projet .apropos__bottom-valeurs .valeur-hidden {
+    position: relative;
+    grid-area: 1/2/4/3;
+  }
+  #apropos .apropos__bottom-valeurs .item-hidden, #projet .apropos__bottom-valeurs .item-hidden {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease, display;
+  }
+  #apropos .apropos__bottom-valeurs .item-hidden.visible, #projet .apropos__bottom-valeurs .item-hidden.visible {
+    opacity: 1;
+  }
   .contacts {
     text-align: center;
     justify-content: center;
@@ -622,9 +677,6 @@ footer svg {
   .contacts__text {
     margin-bottom: 5%;
     font-size: 3em;
-  }
-  .competences {
-    overflow-x: hidden;
   }
   .competences__text {
     font-size: 10vw;
@@ -655,6 +707,88 @@ footer svg {
 }
 /* MEDIA QUERIES */
 @media (max-width: 800px) {
+  #apropos .apropos, #projet .apropos {
+    margin: 5% 0;
+  }
+  #apropos .apropos .valeur-item, #projet .apropos .valeur-item {
+    width: 1%;
+    height: 2;
+  }
+  #apropos .apropos h4, #projet .apropos h4 {
+    margin-bottom: 5%;
+  }
+  #apropos .apropos__bottom, #projet .apropos__bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    height: 60%;
+    margin-bottom: 10%;
+  }
+  #apropos .apropos__bottom-img, #projet .apropos__bottom-img {
+    position: relative;
+    height: 100px;
+  }
+  #apropos .apropos__bottom-img img, #projet .apropos__bottom-img img {
+    -o-object-position: 25% 0;
+       object-position: 25% 0;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 450px;
+    border-radius: 25px;
+    position: relative;
+  }
+  #apropos .apropos__bottom-img .cv, #projet .apropos__bottom-img .cv {
+    border: none;
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    left: 0%;
+    bottom: 0;
+    z-index: 100;
+    background-color: #6c7255;
+  }
+  #apropos .apropos__bottom-img #textPath, #projet .apropos__bottom-img #textPath {
+    font-size: 15px;
+    font-size: bolder;
+    fill: #e1e0d3;
+  }
+  #apropos .apropos__bottom-valeurs, #projet .apropos__bottom-valeurs {
+    height: 40%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  #apropos .apropos__bottom-valeurs .btn, #projet .apropos__bottom-valeurs .btn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+  }
+  #apropos .apropos__bottom-valeurs .btn:nth-child(1), #projet .apropos__bottom-valeurs .btn:nth-child(1) {
+    grid-area: 1/1/2/2;
+  }
+  #apropos .apropos__bottom-valeurs .btn:nth-child(2), #projet .apropos__bottom-valeurs .btn:nth-child(2) {
+    grid-area: 2/1/3/2;
+  }
+  #apropos .apropos__bottom-valeurs .btn:nth-child(3), #projet .apropos__bottom-valeurs .btn:nth-child(3) {
+    grid-area: 3/1/4/2;
+  }
+  #apropos .apropos__bottom-valeurs .valeur-hidden, #projet .apropos__bottom-valeurs .valeur-hidden {
+    position: relative;
+    grid-area: 4/1/5/2;
+  }
+  #apropos .apropos__bottom-valeurs .item-hidden, #projet .apropos__bottom-valeurs .item-hidden {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease, display;
+  }
+  #apropos .apropos__bottom-valeurs .item-hidden.visible, #projet .apropos__bottom-valeurs .item-hidden.visible {
+    opacity: 1;
+  }
   p.h3 {
     margin-top: 0;
     font-size: 1.25em;
