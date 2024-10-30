@@ -29,20 +29,20 @@ h4 {
 
 p,
 a,
-span,
+span, .p,
 .btn {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar {
   width: 12px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -57,15 +57,21 @@ span,
   width: 100vw;
   overflow: hidden;
 }
-#hero .cv {
-  position: absolute;
-  width: 125px;
-  height: 125px;
-  background-color: #222222;
-  border-radius: 50%;
-  right: -4%;
-  top: 50%;
-  z-index: 100;
+#hero h1 {
+  color: #e1e0d3;
+  font-size: 125px;
+  margin-bottom: 0;
+}
+#hero h2 {
+  font-size: 150px;
+  margin-top: -3%;
+}
+#hero p {
+  color: #e1e0d3;
+  max-width: 600px;
+}
+#hero .top-portfolio {
+  color: #222222;
 }
 #hero .hero {
   width: 100%;
@@ -82,7 +88,7 @@ span,
   justify-content: center;
 }
 #hero .hero__text-container {
-  margin-left: 5%;
+  margin-left: 10%;
 }
 #hero .hero .swiper {
   width: 100%;
@@ -100,6 +106,7 @@ span,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: grayscale(1);
 }
 
 .btn {
@@ -112,10 +119,24 @@ span,
   align-items: center;
   justify-content: center;
   transition: background-color 0.5s;
+  border: none;
 }
 .btn:hover {
   color: #e1e0d3;
   background-color: #222222;
+}
+.btn:active {
+  color: #e1e0d3 !important;
+  background-color: #111010 !important;
+}
+.btn:focus {
+  color: #e1e0d3 !important;
+  background-color: #111010 !important;
+}
+
+.active {
+  background-color: #222222 !important;
+  color: #e1e0d3 !important;
 }
 
 body {
@@ -152,41 +173,179 @@ nav a:hover {
   font-weight: bold;
 }
 
-#apropos {
+#apropos, #projet {
   height: 100vh;
   background-color: #e1e0d3;
+  margin-bottom: 5%;
+  position: relative;
+}
+#apropos .guillemets, #apropos b, #projet .guillemets, #projet b {
+  color: #6c7255;
+  font-weight: bold;
+}
+#apropos .apropos .valeur-item, #projet .apropos .valeur-item {
+  width: 1%;
+  height: 2;
+}
+#apropos .apropos h4, #projet .apropos h4 {
+  margin-bottom: 5%;
+}
+#apropos .apropos__bottom, #projet .apropos__bottom {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  height: 60%;
   margin-bottom: 10%;
 }
-
-.apropos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 50px;
-  grid-row-gap: 100px;
+#apropos .apropos__bottom-img, #projet .apropos__bottom-img {
+  position: relative;
+  height: 100px;
 }
-.apropos .apropos__objectif {
-  grid-area: 2/1/3/3;
-  justify-items: center;
-}
-.apropos .apropos__objectif p {
-  text-align: center;
-  color: #6c7255;
-}
-.apropos .apropos__image {
-  grid-area: 1/1/2/2;
-}
-.apropos .apropos__image img {
-  border-radius: 25px;
+#apropos .apropos__bottom-img img, #projet .apropos__bottom-img img {
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0 0%;
-     object-position: 0 0%;
+  height: 450px;
+  border-radius: 25px;
+  position: relative;
+}
+#apropos .apropos__bottom-img .cv, #projet .apropos__bottom-img .cv {
+  border: none;
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  left: -15%;
+  bottom: -270%;
+  z-index: 100;
+  background-color: #6c7255;
+}
+#apropos .apropos__bottom-img #textPath, #projet .apropos__bottom-img #textPath {
+  font-size: 15px;
+  font-size: bolder;
+  fill: #e1e0d3;
+}
+#apropos .apropos__bottom-valeurs, #projet .apropos__bottom-valeurs {
+  height: 40%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+#apropos .apropos__bottom-valeurs .btn, #projet .apropos__bottom-valeurs .btn {
+  position: relative;
+  width: 250px;
+  height: 100%;
+}
+#apropos .apropos__bottom-valeurs .valeur-hidden, #projet .apropos__bottom-valeurs .valeur-hidden {
+  position: relative;
+  grid-area: 2/1/3/4;
+}
+#apropos .apropos__bottom-valeurs .item-hidden, #projet .apropos__bottom-valeurs .item-hidden {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease, display;
+}
+#apropos .apropos__bottom-valeurs .item-hidden.visible, #projet .apropos__bottom-valeurs .item-hidden.visible {
+  opacity: 1;
+}
+
+.carousel {
+  margin: 0 auto;
+  border: none;
+  gap: 0;
+  overflow: hidden;
+  display: flex;
+}
+.carousel > * {
+  flex: 0 0 100%;
+}
+
+.group {
+  gap: 0;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  will-change: transform;
+  animation: scrolling 20s linear infinite;
+  border: 2px solid white;
+}
+
+.card {
+  background-color: #6c7255;
+  gap: 0;
+  margin: -10px;
+  border-radius: 0;
+  border: 2px solid #6c7255;
   width: 100%;
+  color: #e1e0d3;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.dot {
+  width: 20%;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+#projet .valeur-item {
+  width: 1%;
+  height: 2;
+}
+#projet h4 {
+  margin-bottom: 5%;
+}
+#projet .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+#projet .gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#projet .gallery img .gallery img:hover {
+  transform: scale(1.05);
+}
+#projet .ephemeriteswiper {
+  max-width: 450px;
+}
+#projet .myProjet {
+  width: 700px;
   height: 500px;
 }
-.apropos .apropos__text {
-  grid-area: 1/2/2/3;
+#projet .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+#projet .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 #projets {
@@ -485,9 +644,6 @@ footer svg {
 }
 /* MEDIA QUERIES */
 @media (max-width: 800px) {
-  .apropos {
-    gap: 0;
-  }
   p.h3 {
     margin-top: 0;
     font-size: 1.25em;
@@ -512,10 +668,6 @@ footer svg {
   span,
   .btn {
     font-size: 16px;
-  }
-  .apropos {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
   }
   p,
   h1,
@@ -609,13 +761,6 @@ footer svg {
   span,
   .btn {
     font-size: 16px;
-  }
-  .apropos {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .apropos__contact {
-    font-size: 0.5em;
   }
   p,
   h1,

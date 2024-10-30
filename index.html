@@ -54,61 +54,101 @@
       <div class="hero">
         <div class="hero__text">
           <div class="hero__text-container">
-          <h1>Delphine Grenier</h1>
-          <h2>Bienvenue sur mon portfolio</h2>
-          <a target="_blank" href="./assets/medias/delphine_grenier_cv2024.pdf"><button class="btn">Mon CV</button></a>
-          <div class="cv">
-
+            <p class="h4 top-portfolio">Portfolio</p>
+            <h1 class="first-name">Delphine</h1>
+            <h2 class="h1 last-name">Grenier</h2>
+            <p>Diplômée en Infographie & finissante en techniques d'intégration multimédia  </p>
+            <a href="#projets"><button class="btn">Mes projets</button></a>
+    
           </div>
         </div>
-      </div>
-          <div class="swiper swiperHero">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="./assets/medias/cynetart-accueil.jpg" alt=""></div>
-              <div class="swiper-slide">
-                <img src="./assets/medias/ephemerite-3dbug.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/medias/rendu_global.jpg" alt="">
-              </div>
+        <div class="swiper swiperHero">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/medias/cynetart-accueil.jpg" alt=""></div>
+            <div class="swiper-slide">
+              <img src="./assets/medias/ephemerite-3dbug.jpg" alt="">
             </div>
-            <div class="btn-swiper">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-slide">
+              <img src="./assets/medias/rendu_global.jpg" alt="">
             </div>
-            <div class="swiper-pagination"></div>
           </div>
 
-      </div>
+        </div>
 
 
     </section>
     <!-- ------ SECTION PROJETS ------- -->
     <section id="apropos">
       <div class="apropos section-center">
-        <div class="apropos__image">
-          <img src="./assets/medias/dg-portoflio.jpg" alt="moi">
+        <h4 class="h1"> <span class="guillemets h1">"</span>Passionnée par l'univers du multimédia, je souhaite créer des expériences interactives
+          <b>captivantes</b> et <b>inspirantes</b>.<span class="guillemets h1">"</span></h4>
+        <div class="apropos__bottom">
+          <div class="apropos__bottom-valeurs">
+            <div class="btn btn-apropos active" data-index="0">Créativité</div>
+            <div class="btn btn-apropos" data-index="1">Curiosité</div>
+            <div class="btn btn-apropos" data-index="2">Engagement</div>
+            <div class="valeur-hidden">
+              <p class="item-hidden">Des idées, j'en ai toujours. Je m'assure de garder une cohérence artistique et
+                j'utilise mon esprit créatif dans mes projets et dans ma vie de tous les jours.</p>
+              <p class="item-hidden">Curieuse de nature, il n'est pas rare de me voir ouvrir une page Google pour taper
+                : "Comment ça fonctionne ?" ou "C'est quoi, ça ?". Avec une soif d'apprendre, je cherche sans cesse à me
+                dépasser et à comprendre comment les choses fonctionnent.</p>
+              <p class="item-hidden">Je suis une personne d'équipe, toujours prête à m'impliquer dans les projets et
+                activités. Actuellement, je fais partie du club de robotique du Collège Montmorency, où je découvre une
+                nouvelle passion. En tant que tutrice de mon programme, je m'engage auprès de mes pairs avec motivation,
+                prête à travailler avec eux et à les aider dans leur parcours.</p>
+            </div>
+          </div>
+          <div class="apropos__bottom-img">
+            <img src="./assets/medias/dg-portoflio.jpg" alt="">
+            <a target="_blank" href="./assets/medias/delphine_grenier_cv2024.pdf">
+              <svg class="cv" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+                  <path id="circlePath" fill="none" stroke="none" d="
+                      M 20, 50
+                      a 40,40 0 1,1 80,0
+                      a 40,40 0 1,1 -80,0
+                  " />
+                  <text id="text" font-size="8">
+                      <textPath id="textPath" href="#circlePath" startOffset="50%" text-anchor="middle">MON CV ✽ MON CV ✽ MON CV ✽ MON CV ✽ MON CV ✽ </textPath>
+                  </text>
+              </svg>
+          </a>
+          </div>
         </div>
-        <div class="apropos__text">
-          <h2>À propos</h2>
-          <p>Finissante en techniques d'intégration multimédia, j'ai rapidement su que ce domaine était fait pour moi.
-            Il me permet de combiner mon côté créatif avec mes compétences techniques et numériques pour créer des
-            expériences immersives, des sites web, ou même des jeux vidéo.
-          </p>
-          <h3>Faits saillants</h3>
-          <p>- Je travaille toujours
-            mieux après une tasse de café, 2 laits 1 sucre.</p>
-          <p>- J'adore voyager et essayer de nouvelles choses.</p>
-          <p>- Mes jeux vidéos préférés sont : The Last Of Us & Stray.</p>
-          <a target="_blank" href="./assets/medias/delphine_grenier_cv2024.pdf"><button class="btn">Mon CV</button></a>
-        </div>
-        <div class="apropos__objectif">
-          <p class="h3">“Passionnée par l'univers du multimédia, je souhaite créer des expériences interactives
-            <b>captivantes</b>
-            et <b>inspirantes</b>. ”</p>
-        </div>
+
       </div>
     </section>
+    <div class="carousel">
+      <div class="group">
+        <div class="card">CREATIVE</div>
+        <div class="card dot">✽</div>
+        <div class="card">PASSIONNÉE</div>
+        <div class="card dot">✽</div>
+        <div class="card">LEADERSHIP</div>
+        <div class="card dot">✽</div>
+        <div class="card">OUVERTE</div>
+        <div class="card dot">✽</div>
+        <div class="card">INNOVANTE</div>
+        <div class="card dot">✽</div>
+        <div class="card">POSITIVE</div>
+        <div class="card dot">✽</div>
+      </div>
+      <!-- Add `aria-hidden` to hide the duplicated cards from screen readers. -->
+      <div aria-hidden class="group">
+        <div class="card">CREATIVE</div>
+        <div class="card dot">✽</div>
+        <div class="card">PASSIONNÉE</div>
+        <div class="card dot">✽</div>
+        <div class="card">LEADERSHIP</div>
+        <div class="card dot">✽</div>
+        <div class="card">OUVERTE</div>
+        <div class="card dot">✽</div>
+        <div class="card">INNOVANTE</div>
+        <div class="card dot">✽</div>
+        <div class="card">POSITIVE</div>
+        <div class="card dot">✽</div>
+      </div>
+    </div>
 
     <!-- ------ SECTION PROJETS ------- -->
     <section id="projets">

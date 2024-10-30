@@ -2,83 +2,111 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Delphine Grenier Portfolio</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="style.css">
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-light navbar-expand-lg sticky-top">
       <div class="container">
-          <a class="navbar-brand logo" href="./index.html">Delphine Grenier</a>
-          <!-- Hamburger button -->
-          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <!-- Navigation -->
-          <div id="mainNav" class="collapse navbar-collapse">
-              <ul class="navbar-nav">
-  
-                  <li class="nav-item">
-                      <a href="./index.html#apropos" class="nav-link">À propos</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="./index.html#projets" class="nav-link">Projets</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./index.html#competences" class="nav-link">Compétences</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./index.html#contacts" class="nav-link">Contact</a>
-              </li>
-              </ul>
-  
-          </div>
+        <a class="navbar-brand logo" href="./index.html">Delphine Grenier</a>
+        <!-- Hamburger button -->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
+          aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation -->
+        <div id="mainNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="./index.html#apropos" class="nav-link">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html#projets" class="nav-link">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html#competences" class="nav-link">Compétences</a>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html#contacts" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
-
-
+    </nav>
   </header>
   <main class="main" data-spy="scroll" data-target="#navbar-main" data-offset="0">
-<section id="projet">
-<div class="projet section-center">
-    <h1>Éphémérité</h1>
-    <h2>Projet gagnant Concours essais audiovisuels 2e année </h2>
-    <h3>Reaper - MAX 8 - Touch Designer - MAYA AutoDesk - Davinci Resolve</h3>
-    <div class="projet__image">    
-      <p>Éphémérité est un projet multimédia réalisé dans le cadre de trois cours, autour du thème du paysage. L'œuvre explore les questionnements existentiels sur nos connaissances et perceptions en tant qu'humains dans l'univers. La nature interagit avec les sons produits par le spectateur. Le produit final combine des animations 3D, des effets sonores et des effets vidéo en temps réel, modifiés à l'aide de TouchDesigner et de MAX 8 pour créer une expérience interactive et immersive.</p>
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/55s5Ze6boOM?si=kG1YormaJaL62g2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-        <div class="swiper myProjet">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="./assets/medias/ephemerite-3dbug.jpg" alt="ephemerite 3d"></div>
-              <div class="swiper-slide"><img src="./assets/medias/ephemerite-touch.jpg" alt="ephemerite 3d"></div>
-              <div class="swiper-slide"><img src="./assets/medias/ephemerite-3d.jpg" alt="ephemerite 3d"></div>
+    <section id="projet">
+      <div class="projet section-center">
+        <h4 class="h1"> ÉPHÉMÉRITÉ</h4>
+        <div class="apropos__bottom">
+          <div class="apropos__bottom-valeurs">
+            <div class="btn btn-apropos active" data-index="0">Description</div>
+            <div class="btn btn-apropos" data-index="1">Logiciels</div>
+            <div class="btn btn-apropos" data-index="2">Prix</div>
+            <div class="valeur-hidden">
+              <div class="item-hidden ">
+                <div>
+                  <p>
+                    Éphémérité est un projet multimédia réalisé dans le cadre de trois cours, autour du thème du paysage. L'œuvre explore les questionnements existentiels sur nos connaissances et perceptions en tant qu'humains dans l'univers. La nature interagit avec les sons produits par le spectateur. Le produit final combine des animations 3D, des effets sonores et des effets vidéo en temps réel, modifiés à l'aide de TouchDesigner et de MAX 8 pour créer une expérience interactive et immersive.
+                  </p>
+                  <h3>Références</h3>
+                  <ul class="p">
+                    <li>
+                      <b>Delphine Grenier</b> : Animation, Programmation, Conception Sonore, Modélisation des yeux, Montage Vidéo
+                    </li>
+                    <li><b>Sketchfab</b> : Model de l'insecte et de la forêt</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item-hidden">  <p>
+                <ul class="p">
+                  <li>
+                    <b>MAYA</b> : Modélisation et animation 3D
+                  </li>
+                  <li><b>Reaper</b> : Conception sonore</li>
+                  <li><b>MAX 8</b> : Interactivité sonore</li>
+                  <li><b>Touch Designer</b> : Interactivité vidéo</li>
+                </ul>
+              </p></div>
+              <div class="item-hidden"><p>
+                Mon projet Éphémérité s'est démarqué lors du concours d'essais audiovisuels 2024, remportant la première place parmi les élèves de deuxième année. Cette reconnaissance m'a valu l'obtention d'une bourse, ce qui est un véritable honneur et une grande source de motivation pour continuer à développer mes compétences dans ce domaine.
+              </p></div>
             </div>
           </div>
+          <div class="apropos__bottom-img">
+            <div class="swiper myProjet ephemeriteswiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./assets/medias/ephemerite-3dbug.jpg" alt="ephemerite 3d"></div>
+                <div class="swiper-slide"><img src="./assets/medias/ephemerite-touch.jpg" alt="ephemerite 3d"></div>
+                <div class="swiper-slide"><img src="./assets/medias/ephemerite-3d.jpg" alt="ephemerite 3d"></div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <iframe class="mt-5" width="100%" height="100%" src="https://www.youtube.com/embed/55s5Ze6boOM?si=kG1YormaJaL62g2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
-</div>
-</section>
+      </div>
+    </section>
   </main>
   <footer class="footer">
-    <div class=" py-3 py-md-5 py-xl-8 border-top border-light-subtle">
+    <div class="py-3 py-md-5 py-xl-8 border-top border-light-subtle">
       <div class="container overflow-hidden">
         <div class="row gy-3 gy-md-5 gy-xl-0 align-items-sm-center">
           <div class="col-xs-12 col-sm-6 col-xl-3 order-0 order-xl-0">
             <div class="footer-logo-wrapper text-center text-sm-start">
-              <a class="logo" href="./index.html">
-                Delphine Grenier 
-              </a>
+              <a class="logo" href="./index.html"> Delphine Grenier </a>
             </div>
           </div>
 
@@ -103,14 +131,20 @@
             <div class="social-media-wrapper">
               <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-sm-end">
                 <li class="me-3">
-                  <a target="_blank" href="https://www.linkedin.com/in/delphine-grenier/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 30 30">
-                    <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
-                </svg></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/delphine-grenier/"><svg
+                      xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 30 30">
+                      <path
+                        d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z">
+                      </path>
+                    </svg></a>
                 </li>
                 <li class="me-3">
-                  <a target="_blank" href="https://www.behance.net/delphinegrenier"><svg fill="green" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 30 30">
-                    <path d="M 6 4 C 4.895 4 4 4.895 4 6 L 4 24 C 4 25.105 4.895 26 6 26 L 24 26 C 25.105 26 26 25.105 26 24 L 26 6 C 26 4.895 25.105 4 24 4 L 6 4 z M 17.5 11 L 20.056641 11 C 20.332641 11 20.556641 11.224 20.556641 11.5 C 20.556641 11.776 20.332641 12 20.056641 12 L 17.5 12 C 17.224 12 17 11.776 17 11.5 C 17 11.224 17.224 11 17.5 11 z M 8.9199219 11.384766 L 11.705078 11.384766 C 13.349078 11.384766 14.330078 12.189047 14.330078 13.498047 C 14.330078 14.396047 13.665875 15.179594 12.796875 15.308594 L 12.796875 15.414062 C 13.918875 15.496063 14.734375 16.341594 14.734375 17.433594 C 14.735375 18.918594 13.613688 19.859375 11.804688 19.859375 L 8.9199219 19.859375 C 8.4119219 19.859375 8 19.447453 8 18.939453 L 8 12.304688 C 8 11.796688 8.4119219 11.384766 8.9199219 11.384766 z M 9.7734375 12.740234 L 9.7734375 14.896484 L 11.105469 14.896484 C 12.063469 14.897484 12.585937 14.503266 12.585938 13.822266 C 12.585938 13.147266 12.099906 12.740234 11.253906 12.740234 L 9.7734375 12.740234 z M 18.962891 13.240234 C 20.871891 13.240234 21.998047 14.456719 21.998047 16.511719 L 21.998047 17.033203 L 17.554688 17.033203 L 17.554688 17.121094 C 17.577687 18.084094 18.142156 18.683594 19.035156 18.683594 C 19.710156 18.683594 20.173469 18.443625 20.355469 18.015625 L 21.947266 18.015625 C 21.689266 19.237625 20.572328 20 18.986328 20 C 17.013328 20 15.851563 18.754344 15.851562 16.652344 C 15.851562 14.544344 17.036891 13.240234 18.962891 13.240234 z M 18.970703 14.550781 C 18.177703 14.550781 17.618547 15.101406 17.560547 15.941406 L 20.320312 15.941406 C 20.284313 15.084406 19.768703 14.550781 18.970703 14.550781 z M 9.7734375 16.095703 L 9.7734375 18.503906 L 11.353516 18.503906 C 12.375516 18.503906 12.927734 18.07325 12.927734 17.28125 C 12.927734 16.50525 12.3575 16.095703 11.3125 16.095703 L 9.7734375 16.095703 z"></path>
-                </svg></a>
+                  <a target="_blank" href="https://www.behance.net/delphinegrenier"><svg fill="green"
+                      xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 30 30">
+                      <path
+                        d="M 6 4 C 4.895 4 4 4.895 4 6 L 4 24 C 4 25.105 4.895 26 6 26 L 24 26 C 25.105 26 26 25.105 26 24 L 26 6 C 26 4.895 25.105 4 24 4 L 6 4 z M 17.5 11 L 20.056641 11 C 20.332641 11 20.556641 11.224 20.556641 11.5 C 20.556641 11.776 20.332641 12 20.056641 12 L 17.5 12 C 17.224 12 17 11.776 17 11.5 C 17 11.224 17.224 11 17.5 11 z M 8.9199219 11.384766 L 11.705078 11.384766 C 13.349078 11.384766 14.330078 12.189047 14.330078 13.498047 C 14.330078 14.396047 13.665875 15.179594 12.796875 15.308594 L 12.796875 15.414062 C 13.918875 15.496063 14.734375 16.341594 14.734375 17.433594 C 14.735375 18.918594 13.613688 19.859375 11.804688 19.859375 L 8.9199219 19.859375 C 8.4119219 19.859375 8 19.447453 8 18.939453 L 8 12.304688 C 8 11.796688 8.4119219 11.384766 8.9199219 11.384766 z M 9.7734375 12.740234 L 9.7734375 14.896484 L 11.105469 14.896484 C 12.063469 14.897484 12.585937 14.503266 12.585938 13.822266 C 12.585938 13.147266 12.099906 12.740234 11.253906 12.740234 L 9.7734375 12.740234 z M 18.962891 13.240234 C 20.871891 13.240234 21.998047 14.456719 21.998047 16.511719 L 21.998047 17.033203 L 17.554688 17.033203 L 17.554688 17.121094 C 17.577687 18.084094 18.142156 18.683594 19.035156 18.683594 C 19.710156 18.683594 20.173469 18.443625 20.355469 18.015625 L 21.947266 18.015625 C 21.689266 19.237625 20.572328 20 18.986328 20 C 17.013328 20 15.851563 18.754344 15.851562 16.652344 C 15.851562 14.544344 17.036891 13.240234 18.962891 13.240234 z M 18.970703 14.550781 C 18.177703 14.550781 17.618547 15.101406 17.560547 15.941406 L 20.320312 15.941406 C 20.284313 15.084406 19.768703 14.550781 18.970703 14.550781 z M 9.7734375 16.095703 L 9.7734375 18.503906 L 11.353516 18.503906 C 12.375516 18.503906 12.927734 18.07325 12.927734 17.28125 C 12.927734 16.50525 12.3575 16.095703 11.3125 16.095703 L 9.7734375 16.095703 z">
+                      </path>
+                    </svg></a>
                 </li>
               </ul>
             </div>
