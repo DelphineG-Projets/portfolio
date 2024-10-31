@@ -166,6 +166,12 @@ nav a:hover {
   margin-bottom: 5%;
   position: relative;
 }
+#apropos h3, #projet h3 {
+  font-size: 24px;
+}
+#apropos ul, #apropos li, #projet ul, #projet li {
+  font-size: 16px;
+}
 #apropos .guillemets, #apropos b, #projet .guillemets, #projet b {
   color: #6c7255;
   font-weight: bold;
@@ -291,7 +297,7 @@ nav a:hover {
 }
 
 .dot {
-  width: 20%;
+  width: 25%;
 }
 
 @keyframes scrolling {
@@ -302,6 +308,9 @@ nav a:hover {
     transform: translateX(-100%);
   }
 }
+#projet {
+  margin-top: 5%;
+}
 #projet .valeur-item {
   width: 1%;
   height: 2;
@@ -309,13 +318,18 @@ nav a:hover {
 #projet h4 {
   margin-bottom: 5%;
 }
-#projet .gallery {
+#projet .ephemeriteswiper {
+  max-width: 450px;
+}
+
+.gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 10px;
   padding: 20px;
 }
-#projet .gallery img {
+
+.gallery img {
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -323,34 +337,12 @@ nav a:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#projet .gallery img .gallery img:hover {
+.gallery img .gallery img:hover {
   transform: scale(1.05);
 }
-#projet .ephemeriteswiper {
-  max-width: 450px;
-}
-#projet .myProjet {
-  width: 90%;
-  max-width: 700px;
-  height: 500px;
-}
-#projet .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px;
-}
-#projet .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+
+#swiper {
+  margin-top: -5%;
 }
 
 #projets {
@@ -526,14 +518,8 @@ nav a:hover {
   z-index: 100;
 }
 
-img, iframe {
+img {
   max-width: 100%;
-  height: auto;
-}
-
-iframe {
-  margin-top: 30px;
-  width: 100%;
   height: auto;
 }
 
@@ -560,6 +546,15 @@ iframe {
 }
 .contacts__info a {
   color: #222222;
+}
+
+#iframe {
+  height: 500px;
+}
+#iframe iframe {
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
 }
 
 footer {
@@ -620,8 +615,11 @@ footer svg {
 }
 
 @media (max-width: 1400px) {
-  #apropos, #projet {
-    height: 150vh;
+  #apropos .projet p, #projet .projet p {
+    font-size: 16px;
+  }
+  #apropos .projet ul, #apropos .projet li, #projet .projet ul, #projet .projet li {
+    font-size: 12.5px;
   }
   #apropos .apropos, #projet .apropos {
     margin: 5% 0;
@@ -728,6 +726,15 @@ footer svg {
 }
 /* MEDIA QUERIES */
 @media (max-width: 630px) {
+  .projet h3 {
+    font-size: 16px;
+  }
+  .projet ul, .projet li, .projet p {
+    font-size: 10px;
+  }
+  #swiper {
+    margin-top: 5%;
+  }
   .carousel, .card, .group {
     display: none;
   }
@@ -740,6 +747,10 @@ footer svg {
   #apropos .apropos .valeur-item, #projet .apropos .valeur-item {
     width: 1%;
     height: 2;
+  }
+  #apropos .apropos .projet-img, #projet .apropos .projet-img {
+    max-width: 30%;
+    background-color: red;
   }
   #apropos .apropos h4, #apropos .apropos span, #projet .apropos h4, #projet .apropos span {
     font-size: 5vw;
@@ -760,9 +771,11 @@ footer svg {
     display: flex;
     justify-content: center;
   }
+  #apropos .apropos__bottom-img img, #projet .apropos__bottom-img img {
+    display: none;
+  }
   #apropos .apropos__bottom-img .cvcontainer, #projet .apropos__bottom-img .cvcontainer {
-    top: 80%;
-    left: 35;
+    display: none;
   }
   #apropos .apropos__bottom-img #textPath, #projet .apropos__bottom-img #textPath {
     font-size: 15px;
@@ -792,7 +805,7 @@ footer svg {
     grid-area: 3/1/4/2;
   }
   #apropos .apropos__bottom-valeurs .valeur-hidden, #projet .apropos__bottom-valeurs .valeur-hidden {
-    text-align: center;
+    text-align: left;
     position: relative;
     grid-area: 4/1/5/2;
     margin-bottom: 5%;
@@ -887,8 +900,14 @@ footer svg {
   }
 }
 @media (max-width: 450px) {
+  .projet h3 {
+    font-size: 16px;
+  }
+  .projet ul, .projet li, .projet p {
+    font-size: 12px;
+  }
   #hero {
-    height: 50vh;
+    height: 60vh;
   }
   #hero .swiper {
     display: none;
