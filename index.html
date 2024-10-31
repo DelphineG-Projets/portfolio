@@ -16,7 +16,7 @@
 
 <body>
   <header>
-    <nav id="navbar" class="navbar navbar-light navbar-expand-lg sticky-top">
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-lg sticky-top">
       <div class="container">
         <a class="navbar-brand logo" href="#">Delphine Grenier</a>
         <!-- Hamburger button -->
@@ -72,7 +72,7 @@
               <img src="./assets/medias/rendu_global.jpg" alt="">
             </div>
           </div>
-
+        </div>
         </div>
 
 
@@ -80,7 +80,7 @@
     <!-- ------ SECTION PROJETS ------- -->
     <section id="apropos">
       <div class="apropos section-center">
-        <h4 class="h1"> <span class="guillemets h1">"</span>Passionnée par l'univers du multimédia, je souhaite créer des expériences interactives
+        <h4 class="h1"><span class="guillemets h1">"</span>Passionnée par l'univers du multimédia, je souhaite créer des expériences interactives
           <b>captivantes</b> et <b>inspirantes</b>.<span class="guillemets h1">"</span></h4>
         <div class="apropos__bottom">
           <div class="apropos__bottom-valeurs">
@@ -101,7 +101,7 @@
           </div>
           <div class="apropos__bottom-img">
             <img src="./assets/medias/dg-portoflio.jpg" alt="">
-            <a target="_blank" href="./assets/medias/delphine_grenier_cv2024.pdf">
+            <a class="cvcontainer" target="_blank" href="#"> 
               <svg class="cv" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
                   <path id="circlePath" fill="none" stroke="none" d="
                       M 20, 50
@@ -109,15 +109,17 @@
                       a 40,40 0 1,1 -80,0
                   " />
                   <text id="text" font-size="8">
-                      <textPath id="textPath" href="#circlePath" startOffset="50%" text-anchor="middle">MON CV ✽ MON CV ✽ MON CV ✽ MON CV ✽ MON CV ✽ </textPath>
+                      <textPath id="textPath" xlink:href="#circlePath" startOffset="50%" text-anchor="middle">
+                          MON CV ✽ MON CV ✽ MON CV ✽ MON CV ✽ MON CV ✽
+                      </textPath>
                   </text>
               </svg>
-          </a>
+            </a>
           </div>
         </div>
-
       </div>
     </section>
+    <section class="mt-5" id="carrousel">
     <div class="carousel">
       <div class="group">
         <div class="card">CREATIVE</div>
@@ -149,7 +151,7 @@
         <div class="card dot">✽</div>
       </div>
     </div>
-
+</section>
     <!-- ------ SECTION PROJETS ------- -->
     <section id="projets">
 
