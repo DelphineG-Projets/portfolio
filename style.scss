@@ -222,7 +222,7 @@ nav {
 
 
     h4, span {
-       font-size: 4vw;
+       font-size: 3vw;
     }
     h4 {
 
@@ -312,7 +312,8 @@ nav {
 
 
   .carousel {
-    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 5%;
     border: none;
     gap: 0;
     overflow: hidden;
@@ -345,7 +346,7 @@ nav {
     align-items: center;
     min-height: 150px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.5vw;
   }
 
   .dot {
@@ -719,6 +720,14 @@ footer {
 
 @media (max-width: 1400px) {
 
+  .card {
+    font-size: 2vw;
+  }
+
+  .dot {
+    display: none;
+  }
+
 
   #apropos, #projet {
     .projet {
@@ -862,6 +871,8 @@ footer {
 /* MEDIA QUERIES */
 @media (max-width: 630px) {
 
+  
+
   .projet {
     h3 {
       font-size: 16px;
@@ -915,13 +926,15 @@ footer {
         width: 100%;
   
         &-img {
-          height: 100%;
+          height: 0;
+          display: none;
   
           margin-top: 5%;
           display: flex;
             justify-content: center;
           img {
             display: none;
+
           }
 
         

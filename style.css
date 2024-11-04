@@ -184,7 +184,7 @@ nav a:hover {
   height: 2;
 }
 #apropos .apropos h4, #apropos .apropos span, #projet .apropos h4, #projet .apropos span {
-  font-size: 4vw;
+  font-size: 3vw;
 }
 #apropos .apropos h4, #projet .apropos h4 {
   text-align: center;
@@ -260,7 +260,8 @@ nav a:hover {
 }
 
 .carousel {
-  margin: 0 auto;
+  margin-top: 15%;
+  margin-bottom: 5%;
   border: none;
   gap: 0;
   overflow: hidden;
@@ -293,7 +294,7 @@ nav a:hover {
   align-items: center;
   min-height: 150px;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 1.5vw;
 }
 
 .dot {
@@ -615,6 +616,12 @@ footer svg {
 }
 
 @media (max-width: 1400px) {
+  .card {
+    font-size: 2vw;
+  }
+  .dot {
+    display: none;
+  }
   #apropos .projet p, #projet .projet p {
     font-size: 16px;
   }
@@ -766,7 +773,8 @@ footer svg {
     width: 100%;
   }
   #apropos .apropos__bottom-img, #projet .apropos__bottom-img {
-    height: 100%;
+    height: 0;
+    display: none;
     margin-top: 5%;
     display: flex;
     justify-content: center;
