@@ -187,6 +187,7 @@ nav {
   font-weight: bold;
 }
 
+
 #apropos, #projet {
 
   h3 {
@@ -408,7 +409,11 @@ nav {
 }
 
 #swiper {
-  margin-top: -5%;
+  margin-top: 0;
+  margin: 0 auto;
+  max-width: 1300px;
+  height: 300px;
+  margin-bottom: 20%;
 }
 
 #projets {
@@ -563,29 +568,34 @@ nav {
     &:nth-child(2) {
       left: 0px;
       z-index: 100;
+      
     }
 
     &:nth-child(3) {
       top: 220px;
       right: 0px;
       z-index: 1;
+      
     }
 
     &:nth-child(4) {
       top: 150px;
       right: 250px;
       z-index: 100;
+      
     }
 
     &:nth-child(5) {
       top: 200px;
       left: -100px;
       z-index: 100;
+      
     }
 
     &:nth-child(6) {
-      top: -30px;
+      top: -40px;
       z-index: 100;
+
     }
 
     &:nth-child(7) {
