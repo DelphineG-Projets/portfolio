@@ -382,12 +382,12 @@ nav {
   
 
 
-.ephemeriteswiper {
-  max-width: 450px;
-}
 
 }
 
+#iframe {
+  margin-top: 30%;
+}
 .gallery {
 
   display: grid;
@@ -878,10 +878,22 @@ footer {
   }
 }
 
+@media (max-width: 1000px) {
+
+  .ephemeriteswiper {
+    max-height: 500px;
+  }
+
+#iframe {
+  margin-top: 40%;
+}
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 630px) {
 
-  
+
+
 
   .projet {
     h3 {
@@ -1107,6 +1119,8 @@ footer {
 }
 
 @media (max-width: 450px) {
+
+
 
   .projet {
     h3 {

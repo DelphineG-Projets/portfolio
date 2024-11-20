@@ -319,8 +319,9 @@ nav a:hover {
 #projet h4 {
   margin-bottom: 5%;
 }
-#projet .ephemeriteswiper {
-  max-width: 450px;
+
+#iframe {
+  margin-top: 30%;
 }
 
 .gallery {
@@ -733,6 +734,14 @@ footer svg {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+@media (max-width: 1000px) {
+  .ephemeriteswiper {
+    max-height: 500px;
+  }
+  #iframe {
+    margin-top: 40%;
   }
 }
 /* MEDIA QUERIES */
