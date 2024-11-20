@@ -897,9 +897,7 @@ footer {
     margin-top: 5%;
   }
 
-  .carousel, .card, .group  {
-    display: none;
-  }
+
 
   #apropos, #projet {
     
@@ -937,13 +935,12 @@ footer {
   
         &-img {
           height: 0;
-          display: none;
   
           margin-top: 5%;
           display: flex;
             justify-content: center;
           img {
-            display: none;
+            margin-top: 20%;
 
           }
 

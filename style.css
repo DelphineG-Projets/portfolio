@@ -746,9 +746,6 @@ footer svg {
   #swiper {
     margin-top: 5%;
   }
-  .carousel, .card, .group {
-    display: none;
-  }
   #apropos, #projet {
     height: 100vh;
   }
@@ -778,13 +775,12 @@ footer svg {
   }
   #apropos .apropos__bottom-img, #projet .apropos__bottom-img {
     height: 0;
-    display: none;
     margin-top: 5%;
     display: flex;
     justify-content: center;
   }
   #apropos .apropos__bottom-img img, #projet .apropos__bottom-img img {
-    display: none;
+    margin-top: 20%;
   }
   #apropos .apropos__bottom-img .cvcontainer, #projet .apropos__bottom-img .cvcontainer {
     display: none;
